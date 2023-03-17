@@ -1,3 +1,10 @@
+<?php 
+
+$page_title = "Langages";
+$page_titre = "Projet PHP";
+$page_description = "Ce projet permet de découvrir la programmation PHP.";
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,15 +12,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title><?= $page_title; ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <section class="m-3">
-            <h1>Projet PHP</h1>
-            <p>Ce projet permet de découvrir la programmation PHP.</p>
+            <h1><?= $page_titre; ?></h1>
+            <p><?= $page_description; ?></p>
         </section>
         <section>
             <nav>
