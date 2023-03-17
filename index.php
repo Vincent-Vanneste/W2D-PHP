@@ -1,6 +1,6 @@
 <?php 
 
-$page_title = "Langages";
+$page_title = "Accueil";
 $page_titre = "Projet PHP";
 $page_description = "Ce projet permet de découvrir la programmation PHP.";
 

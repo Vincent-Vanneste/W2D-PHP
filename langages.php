@@ -1,3 +1,16 @@
+<?php
+
+$page_title = "Langages";
+$page_titre = "Projet PHP";
+$page_description = "Ce projet permet de découvrir la programmation PHP.";
+
+$listeLangages = [
+    ['id' => "1", 'titre' => "HTML", 'resume' => "Le HTML est un langage de balisage. Il permet de mettre en forme un document en distinguant les titres, les paragraphes, les images, les liens hypertexte...", 'logo' => '1_html.png'],
+    ['id' => "2", 'titre' => "CSS", 'resume' => "Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML (wikipedia).", 'logo' => '2_css.png'],
+    ['id' => "3", 'titre' => "JavaScript", 'resume' => "JavaScript est un langage de programmation de scripts principalement employé dans les pages web (Wikipédia).", 'logo' => '3_javascript.png'],
+    ['id' => "4", 'titre' => "PHP", 'resume' => "PHP: Hypertext Preprocessor, plus connu sous son sigle PHP, est un langage de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP (Wikipédia).", 'logo' => '4_php.png'],
+];
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,15 +18,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Langages</title>
+    <title><?= $page_title; ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <section class="m-3">
-            <h1>Projet PHP</h1>
-            <p>Ce projet permet de découvrir la programmation PHP.</p>
+            <h1><?= $page_titre; ?></h1>
+            <p><?= $page_description; ?></p>
         </section>
         <section>
             <nav>
@@ -30,20 +43,20 @@
             <h2>Langages</h2>
             <ul class="list-group">
                 <li>
-                    <h3><a href="pageHTML.php">HTML</a></h3>
-                    <p>Le HTML est un langage de balisage. Il permet de mettre en forme un document en distinguant les titres, les paragraphes, les images, les liens hypertexte...</p>
+                    <h3><a href="page<?= $listeLangages[0]['titre'] ?>.php"><?= $listeLangages[0]['titre'] ?></a></h3>
+                    <p><?= $listeLangages[0]['resume'] ?></p>
                 </li>
                 <li>
-                    <h3><a href="pageCSS.php">CSS</a></h3>
-                    <p>Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML (wikipedia).</p>
+                    <h3><a href="page<?= $listeLangages[1]['titre'] ?>.php"><?= $listeLangages[1]['titre'] ?></a></h3>
+                    <p><?= $listeLangages[1]['resume'] ?></p>
                 </li>
                 <li>
-                    <h3><a href="pageJavaScript.php">JavaScript</a></h3>
-                    <p>JavaScript est un langage de programmation de scripts principalement employé dans les pages web (Wikipédia).</p>
+                    <h3><a href="page<?= $listeLangages[2]['titre'] ?>.php"><?= $listeLangages[2]['titre'] ?></a></h3>
+                    <p><?= $listeLangages[2]['resume'] ?></p>
                 </li>
                 <li>
-                    <h3><a href="pagePHP.php">PHP</a></h3>
-                    <p>PHP: Hypertext Preprocessor, plus connu sous son sigle PHP, est un langage de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP (Wikipédia).</p>
+                    <h3><a href="page<?= $listeLangages[3]['titre'] ?>.php"><?= $listeLangages[3]['titre'] ?></a></h3>
+                    <p><?= $listeLangages[3]['resume'] ?></p>
                 </li>
             </ul>
         </section>
