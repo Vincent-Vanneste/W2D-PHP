@@ -6,4 +6,4 @@ $page_description = "Ce projet permet de découvrir la programmation PHP.";
 
 $langage = $listeLangages[2];
 
-require 'afficher.php';
+require 'show.php';
