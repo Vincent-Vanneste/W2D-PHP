@@ -16,10 +16,10 @@ $page_description = "Ce projet permet de découvrir la programmation PHP.";
         <section class="p-3">
             <h2>Langages</h2>
             <ul class="list-group">
-                <?php for ($i = 0; $i < count($listeLangages); $i++) { ?>
+                <?php foreach ($listeLangages as $langage) { ?>
                     <li>
-                        <h3><a href="page<?= $listeLangages[$i]['titre'] ?>.php"><?= $listeLangages[$i]['titre'] ?></a></h3>
-                        <p><?= $listeLangages[0]['resume'] ?></p>
+                        <h3><a href="page<?= $langage['titre'] ?>.php"><?= $langage['titre'] ?></a></h3>
+                        <p><?= $langage['resume'] ?></p>
                     </li>
                 <?php } ?>
             </ul>
