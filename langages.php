@@ -16,22 +16,12 @@ $page_description = "Ce projet permet de découvrir la programmation PHP.";
         <section class="p-3">
             <h2>Langages</h2>
             <ul class="list-group">
-                <li>
-                    <h3><a href="page<?= $listeLangages[0]['titre'] ?>.php"><?= $listeLangages[0]['titre'] ?></a></h3>
-                    <p><?= $listeLangages[0]['resume'] ?></p>
-                </li>
-                <li>
-                    <h3><a href="page<?= $listeLangages[1]['titre'] ?>.php"><?= $listeLangages[1]['titre'] ?></a></h3>
-                    <p><?= $listeLangages[1]['resume'] ?></p>
-                </li>
-                <li>
-                    <h3><a href="page<?= $listeLangages[2]['titre'] ?>.php"><?= $listeLangages[2]['titre'] ?></a></h3>
-                    <p><?= $listeLangages[2]['resume'] ?></p>
-                </li>
-                <li>
-                    <h3><a href="page<?= $listeLangages[3]['titre'] ?>.php"><?= $listeLangages[3]['titre'] ?></a></h3>
-                    <p><?= $listeLangages[3]['resume'] ?></p>
-                </li>
+                <?php for ($i = 0; $i < count($listeLangages); $i++) { ?>
+                    <li>
+                        <h3><a href="page<?= $listeLangages[$i]['titre'] ?>.php"><?= $listeLangages[$i]['titre'] ?></a></h3>
+                        <p><?= $listeLangages[0]['resume'] ?></p>
+                    </li>
+                <?php } ?>
             </ul>
         </section>
     </main>
